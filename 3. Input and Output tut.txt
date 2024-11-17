@@ -1,0 +1,47 @@
+For Input and Output in C++, we use the following libraries:
+#include <iostream>
+using namespace std;
+
+//Input:
+In C++ "cin" is used to take input from the user followed by extraction operator(>>).
+Syntax:
+cin>>variable_name;
+
+Example:
+int a;
+cin>>a;
+cout<<a;
+
+//Output:
+In C++ "cout" is used to print output to the user followed by insertion operator(<<).
+Syntax:
+cout<<variable_name;
+
+Example:
+int a;
+cin>>a;
+cout<<a;
+
+//endl:
+endl is used to print a new line.
+Syntax:
+cout<<endl;
+
+Example:
+cout<<"Hello World"<<endl;
+
+// \n:
+\n is also used to print a new line.
+Syntax:
+cout<<'\n';
+
+Example:
+cout<<"Hello World \n";
+
+// \t:
+\t is used to print a tab space.
+Syntax:
+cout<<'\t';
+
+Example:
+cout<<"Hello World \t";

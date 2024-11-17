@@ -1,0 +1,23 @@
+Break Statement:-
+Break statement is used to exit from a loop when condition is meet.
+
+syntax:-
+for (parameters){
+    if (condition){
+        Break;                  // Break statement declaration
+    }
+}
+
+-> Break Statement can be used with any loop (For, while, do-while).
+
+Continue:-
+Continue Statement is used to skipped the current loop / Iteration in loop.
+
+syntax:-
+for (parameters){
+    if (condition){
+        Break;                  // Break statement declaration
+    }
+}
+
+-> Continue Statement can also be used with any loop (For, while, do-while).

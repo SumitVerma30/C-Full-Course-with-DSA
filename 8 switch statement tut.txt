@@ -1,0 +1,25 @@
+Switch Statement:-
+The switch statement is used to execute the different blocks of statements based on the value of the given expression. We can create different cases for different values of the switch expression.
+
+Syntax --> Syntax include switch keyword with different cases declared.
+
+switch (expression) {
+    case x:
+        // code block;
+        break;
+    
+    case y:
+        //code block;
+        break;
+
+    default:
+        // code block;
+    break;
+}
+
+This is how it works:-
+
+    1. The switch expression is evaluated once.
+    2. The value of the expression is compared with the values of each case.
+    3. If there is a match, the associated block of code is executed.
+    4. The break and default keywords are optional, and will be described later in this chapter.

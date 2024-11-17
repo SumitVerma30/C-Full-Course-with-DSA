@@ -1,0 +1,31 @@
+OBJECT ORIENTED PROGRAMMING (OOPs):-
+-> OOP stands for Object-Oriented Programming.
+-> Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism, etc. in programming.
+-> Focuses on Data.
+-> Works ont he concept of classes and objects.
+-> A class is a template to create objects.
+-> Treats data as a critical element.
+-> Break the problems in objects.
+
+    BASIC CONCEPTS IN OOP:-
+-> Classes - Basic template for creating objects.
+-> Objects - Basic run time entities.
+-> Data Abstraction & Encapsulation - Wrapping data and functions into single unit.
+-> Inheritance - Properties of one class can be inherited into others.
+-> Polymorphism - ability to take more than one forms.
+-> Dynamic Binding - code which will execute is not known until the program. runs.
+-> Message Passing - Object.message (Information) call format.
+
+
+PROCEDURE ORIENTED PROGRAMMING (POP):-
+-> Consists of writing a set of instructions for the computer to follow.
+-> Main focus is on functions and not on flow of data.
+-> Function can either use local or global data.
+-> Data moves openly from function to functions.
+
+
+    BENEFITS OF OBJECT ORIENTED PROGRAMMING:-
+-> Better code reusability using objects and inheritance.
+-> Principle of hiding helps build secure systems.
+-> Multiple objects can co-exist without any interface.
+-> Software complexity can be esaily managed.

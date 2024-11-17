@@ -1,0 +1,37 @@
+STATIC DATA MEMBERS:-
+In C++, static data members (also known as class variables) are attributes of a class that are shared across all instances (objects) of that class, rather than each object having its own separate copy. A static data member is declared using the static keyword within the class definition, but it must be defined outside the class if it needs to be initialized.
+
+    KEY CHARACTERSTICS OF STATIC DATA MEMBERS:-
+-> Shared Across All Instances: All objects of the class share a single copy of the static data member.
+-> Class Scope: Static members exist at the class level, not the instance level.
+-> Initialization Outside Class: Static data members are typically initialized outside the class declaration.
+-> Lifetime: They exist from program start to end, similar to global variables.
+
+Syntax:-
+class class-name{
+    private:
+    static datatype var-name;       // Declaration
+};
+
+type class :: var-name          // Definition
+
+STATIC MEMBER FUNCTION:-
+In C++, static member functions are functions within a class that can be called without needing an instance of the class. They are declared with the static keyword and can only access other static members (both data and functions) of the class. 
+
+    KEY CHARACTERSTICS OF STATIC MEMBER FUNCTIONS:-
+-> Called Without an Instance: They can be called using the class name instead of an object.
+-> Access Only Static Members: They can only access static data members and other static member functions.
+-> No this Pointer: Since they don’t belong to a particular object instance, they lack the this pointer.
+
+Syntax:-
+class class-name{
+    private:
+    static datatype var-name;       // Declaration of static data member
+    public:
+    static returntype function-name () {       // Static member function definition
+        // body of function
+    }
+};
+
+type class :: var-name          // Definition of static data member
+

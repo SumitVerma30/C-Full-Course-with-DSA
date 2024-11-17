@@ -1,0 +1,67 @@
+ARRAY OF OBJECTS:-
+An array of objects allows you to store multiple objects of the same class in a contiguous memory structure. This can be useful for managing a collection of similar objects, such as employees, students, or products.
+
+PASSING OBJECTS AS ARGUMENTS:-
+Objects of a class can be passed as arguments to functions. This can be done in two ways:
+
+Pass by Value: A copy of the object is passed to the function.
+Pass by Reference: The actual object is passed, allowing modifications to the original object.
+
+COMBINING ARRAY OF OBJECTS AND PASSING OBJECT AS ARGUMENTS:-
+You can combine both concepts, using an array of objects and passing them to functions.
+
+Example:-
+#include <iostream>
+using namespace std;
+
+class Student {
+private:
+    string name;
+    int marks;
+
+public:
+    void setDetails(const string& studentName, int studentMarks) {
+        name = studentName;
+        marks = studentMarks;
+    }
+
+    void display() const {
+        cout << "Name: " << name << ", Marks: " << marks << endl;
+    }
+
+    // Function to compare marks (pass by reference)
+    static Student compare(const Student& s1, const Student& s2) {
+        return (s1.marks > s2.marks) ? s1 : s2;
+    }
+};
+
+int main() {
+    Student students[3]; // Array of 3 Student objects
+    students[0].setDetails("Alice", 85);
+    students[1].setDetails("Bob", 90);
+    students[2].setDetails("Charlie", 88);
+
+    cout << "All Students:" << endl;
+    for (int i = 0; i < 3; ++i) {
+        students[i].display();
+    }
+
+    // Comparing two students
+    Student topStudent = Student::compare(students[0], students[1]);
+    cout << "\nTop Scorer:" << endl;
+    topStudent.display();
+
+    return 0;
+}
+
+KEY POINTS:-
+Array of Objects:-
+-> Useful for managing a collection of similar objects.
+-> Supports static and dynamic arrays.
+
+Passing Objects:-
+-> Pass by value creates a copy of the object, but it can be costly for large objects.
+-> Pass by reference is efficient and allows modifications to the original object.
+
+Combining Concepts:-
+-> You can use arrays of objects and pass them as arguments to functions to create powerful and flexible solutions.

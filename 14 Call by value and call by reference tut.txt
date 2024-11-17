@@ -1,0 +1,16 @@
+Call by Value:-
+In call by value method of parameter passing, the values of actual parameters are copied to the function’s formal parameters.
+--> While calling a function, we pass the values of variables to it. Such functions are known as “Call By Values”.
+
+---> "Call by value occur when actual parameters are copied to the formal parameters" 
+
+->There are two copies of parameters stored in different memory locations.
+->One is the original copy and the other is the function copy.
+->Any changes made inside functions are not reflected in the actual parameters of the caller.
+
+Call by Reference:-
+In call by reference method of parameter passing, the address of the actual parameters is passed to the function as the formal parameters. In C, we use pointers to achieve call-by-reference.
+-->While calling a function, we pass the address of variables(location of variables) to the function known as “Call By References.
+
+->Both the actual and formal parameters refer to the same locations.
+->Any changes made inside the function are actually reflected in the actual parameters of the caller.

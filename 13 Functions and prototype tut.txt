@@ -1,0 +1,34 @@
+Functions:-
+A function is a block of code which only runs when it is called. 
+-> The idea is to put repeatedly done tasks together to make a function, so that instead of writing the same code again and again for different inputs, we can call this function any time in the code.
+
+Syntax:-
+return-type func_name (){
+    // body of the function
+}
+
+Calling a Function:-
+Function is called in program by using function name as:
+
+func_name ();
+
+Parameters and arguments:-
+The values assigned to the function is known as its Parameters.
+-> Parameters are written in open Braces ().
+
+type functionName(parameter1, parameter2, parameter3) {
+  // code to be executed
+}
+
+Default Parameters:-
+Parameters whose value is assigned while declaring parameters are known as default parameters.
+OR Parameters with some value assigned during declaration are known as default parameters.
+
+type functionName(parameter1, parameter2 = "value"){            //parameter2 is a default parameter
+    // Body of function
+}     
+
+Function Prototype:-
+If we want to define function after function declaration or main function, then function prototype is used.
+syntax:-
+type function-name (arguments);

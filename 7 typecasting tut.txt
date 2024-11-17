@@ -1,0 +1,8 @@
+Typecasting:
+It is a method to turn one datatype to other.
+
+example: If we want to turn integer value to float value, we typecast datatyype from int to float.
+
+syntax:
+datatype variable-name = typecasting-datatype (variable);
+

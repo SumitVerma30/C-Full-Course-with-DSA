@@ -1,0 +1,18 @@
+Pointers:-
+It is a data type which holds the address of the other datatypes.
+
+syntax:-
+datatype var_name = value; 
+datatype* ptr_var = &var_name;   // ptr can point to an address which holds int data
+
+example:-
+int a = 10;
+int* b = &a;
+
+&--> Address of operator
+*--> Dereference operator
+
+It can be decalerd in three types:
+datatype* ptr_var_name;
+datatype * ptr_var_name;
+datatype *ptr_var_name;

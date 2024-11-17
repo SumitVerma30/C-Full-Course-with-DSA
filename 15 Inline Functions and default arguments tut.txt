@@ -1,0 +1,30 @@
+"Inline Function":-
+An inline function is a function that is expanded in line when it is called. When the inline function is called whole code of the inline function gets inserted or substituted at the point of the inline function call.
+
+Syntax:-
+inline return-type function-name(parameters)
+{
+    // function code
+}  
+
+When Not to Use Inline:-
+-> Large or complex functions.
+-> Functions that are frequently changed during development, as inlining can increase compilation time.
+
+
+"Default Arguments":-
+A default argument is a value provided in a function declaration that is automatically assigned by the compiler if the calling function doesn’t provide a value for the argument.
+--> In C++, default arguments allow a function to be called without providing all the arguments explicitly. If a function call omits an argument, the default value specified in the function declaration is used.
+
+Syntax:-
+return_type function_name(type arg1 = default_value1, type arg2 = default_value2, ...);
+
+Key Points:
+   --->Order of Default Arguments:
+
+Defaults must be specified from rightmost to leftmost.
+For example:
+void example(int a, int b = 10, int c = 20); // Valid
+void invalid_example(int a = 10, int b, int c = 20); // Invalid
+
+

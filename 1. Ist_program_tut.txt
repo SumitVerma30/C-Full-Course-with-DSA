@@ -1,0 +1,26 @@
+Basic C++ program syntax details:
+
+1. #include<iostream>
+   using namespace std;
+
+   int main(){
+    cout << "Hello World";
+    return 0;
+   }
+   
+
+
+2. #include<iostream>       //Header file
+   Using namespace std;    //Standard library
+
+   int main(){           //Main function
+    int num1 = 24;       //Variable declaration
+    int num2 = 34;       //Variable declaration 
+
+    int result = num1 + num2;       //Expression
+    cout << result << endl;         //Output
+    
+    return 0;                      //Return statement
+   }
+
+

@@ -1,0 +1,23 @@
+CLASSES:-
+A class is a user-defined data type, which holds its own data members and member functions, which can be accessed and used by creating an instance of that class. A C++ class is like a blueprint for an object.
+
+-> For Example: Consider the Class of Cars. There may be many cars with different names and brands but all of them will share some common properties like all of them will have 4 wheels, Speed Limit, Mileage range, etc. So here, the Car is the class, and wheels, speed limits, and mileage are their properties.
+
+Syntax:-
+A class is defined in C++ using the keyword class followed by the name of the class. The following is the syntax:
+
+class ClassName {
+     access_specifier:
+     // Body of the class
+};
+
+ACCESS SPECIFIERS:-
+Access modifiers are used to implement an important aspect of Object-Oriented Programming known as Data Hiding.
+
+In C++, there are three access specifiers:
+
+-> public - members are accessible from outside the class
+-> private - members cannot be accessed (or viewed) from outside the class
+-> protected - members cannot be accessed from outside the class, however, they can be accessed in inherited classes. You will learn more about Inheritance later.
+
+

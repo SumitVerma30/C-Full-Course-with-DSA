@@ -1,0 +1,41 @@
+Structure:-
+A structure (also called structs) is a user-defined data type in C/C++. A structure creates a data type that can be used to group items of different types into a single type.
+--> Unlike an array, a structure can contain many different data types (int, string, bool, etc.).
+
+--> Each variable in the structure is known as a member of the structure.
+
+Create a structure:-
+To create a structure, use the struct keyword and declare each of its members inside curly braces.
+
+syntax:->
+struct structureName{
+    member1;
+    member2;
+    member3;
+    .
+    .
+    .
+    memberN;
+};
+
+Unions:-
+A union is a type of structure that can be used where the amount of memory used is a key factor. 
+
+Similarly to the structure, the union can contain different types of data types.
+It is declared by using the keyword “union“.
+
+It allows us to optimise the memory.
+-> Same memory is shared with different datatypes.
+
+ENUMS:-
+Enums are user-defined types that consist of named integral constants.
+An enum is a special type that represents a group of constants (unchangeable values).
+
+It helps to assign constants to a set of names to make the program easier to read, maintain and understand.
+-> The values are defined by the programmer at the time of declaring the enumerated type.
+
+Syntax:-
+enum enumerated-type-name
+{
+    value1, value2, value3…..valueN
+};

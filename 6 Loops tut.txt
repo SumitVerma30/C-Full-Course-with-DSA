@@ -1,0 +1,32 @@
+Types of loops:
+1. For loop
+2. While loop
+3. Do-while loop
+
+While Loop:
+The while loop is a control structure that allows you to execute a block of code repeatedly as long as the condition is true.
+
+syntax:-
+while(condition){
+    // code to be executed
+}
+
+For Loop:
+The for loop is a control structure that allows you to execute a block of code repeatedly for a specified task.
+
+syntax:-
+for (initial-statement; condition; final-expression){
+    //code to be executed
+}
+
+initial-statement:- starting point/initialise loop variable. 
+condition:- condition/ stoping point for the loop.
+final-expression:- Update loop variable.
+
+Do-While Loop:
+The do/while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.
+
+syntax:-
+do {
+    //code
+}whle (condition);

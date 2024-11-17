@@ -1,0 +1,84 @@
+1. Variables:
+A variable in C language is the name associated with some memory location to store data of different types.
+
+//C++ Variable Syntax:
+
+data_type variable_name = value;    // defining single variable
+            or
+data_type variable_name1, variable_name2;    // defining multiple variable
+
+Example:
+
+int var;    // integer variable
+char a;     // character variable
+float fff;  // float variables
+
+Data Types:
+It specifies the type of data that the variable can store like integer, character, floating, double, etc.
+
+//Basic Data Types
+The data type specifies the size and type of information the variable will store:
+
+Data Type	Size	        Description
+boolean	    1 byte	        Stores true or false values
+char	    1 byte	        Stores a single character/letter/number, or ASCII values
+int	        2 or 4 bytes	Stores whole numbers, without decimals
+float	    4 bytes	        Stores fractional numbers, containing one or more decimals. Sufficient for storing 6-7 decimal digits
+double	    8 bytes	        Stores fractional numbers, containing one or more decimals. Sufficient for storing 15 decimal digits
+
+// C++ Numeric Data Types:
+//Int Data Type:
+It is used to store integer values.
+Syntax:
+int variable_name = value;
+Example:
+int a = 10;
+
+//Float Data Type:
+It is used to store floating-point numbers.
+Syntax:
+float variable_name = value;
+Example:
+float a = 10.5;
+
+//Double Data Type:
+It is used to store floating-point numbers.
+Syntax:
+double variable_name = value;
+Example:
+double a = 10.5;
+
+//Boolean Data Type:
+//Bool Data Type:
+It is used to store boolean values.
+Syntax:
+bool variable_name = value;
+Example:
+bool a = true;
+bool b = false;
+
+//Character Data Type:
+//Char Data Type:
+It is used to store characters.
+Syntax:
+char variable_name = value;
+Example:
+char a = 'a';
+char b = 'b';
+
+//String Data Type:
+It is used to store strings value(always in double quotes" ").
+Syntax:
+string variable_name = "value";
+Example:
+string a = "Hello";
+string b = "World";
+
+//Ways to define string:
+string a = "Hello";
+string b(5,'a'); // b is "aaaaa"
+
+//String Concatenation:
+It is the process of adding two strings together.
+Syntax:
+string a = "Hello";

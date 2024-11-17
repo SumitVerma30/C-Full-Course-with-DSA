@@ -1,0 +1,91 @@
+//If Statement: 
+-syntax:
+if (condition) {
+    //code to be executed if condition is true
+}
+
+-example:
+int age;
+cout << "Enter your age: ";
+cin >> age;
+if (age >= 18){
+    cout << "You are eligible to vote." << endl;
+}
+
+//If-Else Statement:
+-syntax:
+if (condition) {
+    //code to be executed if condition is true
+}
+else {
+    //code to be executed if condition is false
+}
+
+-example:
+int age;
+cout << "Enter your age: ";
+cin >> age;
+if (age >= 18){
+    cout << "You are eligible to vote." << endl;
+}
+else{
+    cout << "You are not eligible to vote." << endl;
+}
+
+//If-Else-If Statement:
+-syntax:
+if (condition1) {
+    //code to be executed if condition1 is true
+}
+else if (condition2) {
+    //code to be executed if condition2 is true
+}
+else {
+    //code to be executed if condition1 and condition2 are false
+}
+
+-example:
+int marks;
+cout << "Enter your marks: ";
+cin >> marks;
+if (marks > 90){
+    cout << "You got A grade." << endl;
+}
+else if (marks > 80){
+    cout << "You got B grade." << endl;
+}
+else if (marks > 70){
+    cout << "You got C grade." << endl;
+}
+else{
+    cout << "You got F grade." << endl;
+}
+
+//Nested If-Else Statement:
+-syntax:
+if (condition1) {
+    if (condition2) {
+        //code to be executed if condition2 is true
+    }
+    else {
+        //code to be executed if condition2 is false
+    }
+}
+
+-example:
+int marks;
+cout << "Enter your marks: ";
+cin >> marks;
+if (marks > 33){
+    if (marks > 90){
+        cout << "You got A grade." << endl;
+    }
+    else{
+        cout << "You got B grade." << endl;
+    }
+}
+else{
+    cout << "You are Failed." << endl;
+}
+
+

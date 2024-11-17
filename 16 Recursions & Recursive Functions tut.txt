@@ -1,0 +1,48 @@
+Recursion & Recursive Functions:-
+Recursion in C++
+Recursion is a programming technique where a function calls itself directly or indirectly to solve a smaller instance of the same problem. It is commonly used for problems that can be divided into smaller subproblems of the same type.
+
+Recursive Function:-
+A recursive function is a function that calls itself during its execution. It must have:
+
+-> Base Case: A condition to stop the recursion and prevent infinite recursion.
+-> Recursive Case: The part where the function calls itself with a modified argument.
+
+Syntax:-
+return_type function_name(parameters) {
+    if (base_condition) {
+        // Base case
+        return base_value;
+    }
+    else {
+        // Recursive case
+        return function_name(modified_parameters);
+    }
+}
+
+1. Example 1: Factorial
+Factorial of a number n is defined as:
+n! = n * (n-1)! (recursive case)
+0! = 1 (base case)
+
+2. Example: Fibonacci Series
+The Fibonacci sequence is:
+F(0) = 0, F(1) = 1 (base cases)
+F(n) = F(n-1) + F(n-2) (recursive case)
+
+Types of Recursion:-
+1. Direct Recursion: A function calls itself directly.
+
+void func() {
+    func(); // Direct call
+}
+
+2. Indirect Recursion: A function calls another function, which in turn calls the first function.
+
+void funcA() {
+    funcB();
+}
+
+void funcB() {
+    funcA();
+}

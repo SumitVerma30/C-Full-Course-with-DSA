@@ -1,0 +1,15 @@
+Array:-
+An array is a collection of items of similar type stored in contiguous memory loactions.
+
+syntax:-
+datatype arr[size];             // [size] size of the array(no. of values in array)
+datatype arr[size] = {value1, value2, value3, value4, value5...};
+
+eg:-
+int arr[5];         // this array stores 5 values
+int arr[5] = {1, 2, 3, 4, 5,}
+
+-> we can also print array using loops (given in code)
+
+pointer arithmetic and array:-
+pointer arithmetic gen. formula: address(new) = address(current) + i * sizeof(datatype)

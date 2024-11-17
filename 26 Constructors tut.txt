@@ -1,0 +1,15 @@
+CONSTRUCTORS:-
+A constructor in C++ is a special method that is automatically called when an object of a class is created.
+The constructor in C++ has the same name as the class or structure. It constructs the values i.e. provides data for the object which is why it is known as a constructor.
+
+Syntax:-
+class-name (){
+    //body of object
+}
+
+    Characteristics of Constructors in C++:-
+-> The name of the constructor is the same as its class name.
+-> Constructors are mostly declared in the public section of the class though they can be declared in the private section of the class.
+-> Constructors do not return values; hence they do not have a return type.
+-> A constructor gets called automatically when we create the object of the class.
+

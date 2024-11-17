@@ -1,0 +1,168 @@
+OBJECT MEMORY ALLOCATION IN C++:-
+In C++, objects can be allocated memory in two ways:
+
+Static Memory Allocation:-
+Memory is allocated on the stack.
+Objects are created and destroyed automatically when the program's scope changes.
+No explicit memory management is required.
+
+Example:-
+class Example {
+    int x;
+};
+
+int main() {
+    Example obj; // Static allocation, memory released automatically
+    return 0;
+}
+
+Dynamic Memory Allocation:-
+Memory is allocated on the heap using the new keyword.
+Objects must be explicitly created and destroyed to manage memory effectively.
+The delete keyword is used to deallocate memory.
+
+Example:-
+class Example {
+    int x;
+};
+
+int main() {
+    Example* obj = new Example; // Dynamic allocation
+    delete obj; // Deallocate memory to prevent memory leaks
+    return 0;
+}
+
+USING ARRAY IN CLASSES:-
+You can use arrays as data members of a class or arrays of objects for efficient data management.
+
+1. Arrays as Data Members
+A class can include an array as a data member, allowing it to store multiple elements.
+
+Example:-
+#include <iostream>
+using namespace std;
+
+class Student {
+private:
+    string name;
+    int marks[5]; // Array to store marks of 5 subjects
+
+public:
+    // Method to input marks
+    void setMarks(const string& studentName, int m[]) {
+        name = studentName;
+        for (int i = 0; i < 5; ++i) {
+            marks[i] = m[i];
+        }
+    }
+
+    // Method to display marks
+    void display() {
+        cout << "Student: " << name << "\nMarks: ";
+        for (int i = 0; i < 5; ++i) {
+            cout << marks[i] << " ";
+        }
+        cout << endl;
+    }
+};
+
+int main() {
+    Student s;
+    int marks[5] = {85, 90, 78, 88, 92};
+    s.setMarks("John Doe", marks);
+    s.display();
+    return 0;
+}
+
+2. Arrays of Objects:-
+You can create an array of objects to manage multiple instances of a class.
+
+Example:-
+#include <iostream>
+using namespace std;
+
+class Employee {
+private:
+    string name;
+    int id;
+
+public:
+    void setDetails(const string& empName, int empId) {
+        name = empName;
+        id = empId;
+    }
+
+    void display() {
+        cout << "ID: " << id << ", Name: " << name << endl;
+    }
+};
+
+int main() {
+    Employee employees[3]; // Array of 3 Employee objects
+
+    employees[0].setDetails("Alice", 101);
+    employees[1].setDetails("Bob", 102);
+    employees[2].setDetails("Charlie", 103);
+
+    for (int i = 0; i < 3; ++i) {
+        employees[i].display();
+    }
+
+    return 0;
+}
+
+Dynamic Arrays in Classes:-
+If the size of the array is not fixed, you can allocate it dynamically using the new keyword.
+
+Example:-
+#include <iostream>
+using namespace std;
+
+class DynamicArray {
+private:
+    int* arr;   // Pointer to dynamically allocated array
+    int size;
+
+public:
+    DynamicArray(int n) {
+        size = n;
+        arr = new int[size]; // Dynamic allocation
+    }
+
+    void setValues(int index, int value) {
+        if (index >= 0 && index < size) {
+            arr[index] = value;
+        }
+    }
+
+    void display() {
+        for (int i = 0; i < size; ++i) {
+            cout << arr[i] << " ";
+        }
+        cout << endl;
+    }
+
+    ~DynamicArray() {
+        delete[] arr; // Deallocate memory
+        cout << "Memory released." << endl;
+    }
+};
+
+int main() {
+    DynamicArray da(5); // Create dynamic array of size 5
+
+    for (int i = 0; i < 5; ++i) {
+        da.setValues(i, i * 10);
+    }
+
+    da.display();
+
+    return 0;
+}
+
+    KEY POINTS:-
+-> Static Allocation is simple and automatic, but limited by scope and stack size.
+-> Dynamic Allocation provides flexibility and works well for large or variable-sized arrays, but requires explicit memory management.
+-> Arrays can be used effectively as data members or arrays of objects to handle collections of similar data.
+-> Dynamic arrays in classes are powerful for managing collections when the size is not known at compile time but require a destructor to release memory to prevent leaks.
+
