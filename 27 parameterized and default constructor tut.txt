@@ -1,0 +1,23 @@
+Default Constructor:-
+Default Constructor are those constructors which takes no parameters. 
+A default constructor is a constructor that doesn’t take any argument. It has no parameters. It is also called a zero-argument constructor.
+
+Syntax of Default Constructor:-
+
+className() {
+    // body_of_constructor
+}
+
+Parameterized Constructor:-
+Parameterized Constructor are those constructors which takes parameters.
+Parameterized constructors make it possible to pass arguments to constructors. Typically, these arguments help initialize an object when it is created.
+
+Syntax of Parameterized Constructor:-
+
+className (parameters...) {
+      // body
+}
+
+If we want to initialize the data members, we can also use the initializer list as shown:-
+MyClass::MyClass(int val) : memberVar(val) {};
+
