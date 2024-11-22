@@ -1,0 +1,30 @@
+CONSTRUCTOR OVERLOADING:-
+In C++ is a feature that allows a class to have multiple constructors with the same name but different parameter lists. This provides flexibility in initializing objects of a class in various ways.
+
+    KEY POINTS:-
+-> Same Name:- All constructors share the same name as the class.
+-> Different Signatures:- Constructors must differ in their parameter lists (type, number, or order of parameters).
+-> Purpose:- To allow objects to be initialized in multiple ways based on different scenarios.
+
+Syntax:-
+class class-name {
+public:
+    // Default constructor
+    class-name() {}             // No parameter
+
+    // Parameterized constructor (1 parameter)
+    class-name(parameter 1) {}
+
+    // Parameterized constructor (2 parameters)
+    class-name(parameter 1, parameter2) {}
+
+};
+
+    BENEFITS:-
+-> Code Readability: Makes the code cleaner and more intuitive.
+-> Flexibility: Allows initialization of objects in different ways.
+-> Convenience: Reduces the need for setter methods for initial values.
+
+    NOTES:-
+-> If no constructor is explicitly defined, C++ provides a default constructor.
+-> Overloaded constructors can call one another using the this pointer or by explicitly calling another constructor from within the constructor body.
