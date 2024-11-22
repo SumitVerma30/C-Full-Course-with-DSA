@@ -1,0 +1,100 @@
+INHERITANCE:-
+Inheritance is the important feature in OOPs.
+
+    Overview:-
+-> the Reusabilty is a very important feature in OOPs
+-> In c++, we can reuse a class and add additional features to it.
+-> Reusing classes saves time and money.
+-> Reusing already tested and debugged class will save a lot of effort of develooping and debugging the same thing again.
+
+    Concept:-
+Inheritance is a key feature of object-oriented programming in C++ that allows one class (the derived class) to inherit properties and behaviors (data members and member functions) from another class (the base class). It enables code reuse and establishes an "is-a" relationship between classes.
+-> The existing class is called as base class.
+-> The new class which is inherited is called as the derived class.
+
+    Syntax to derive a class:-
+class  derived_class_name : access-specifier  base_class_name
+{
+       //    body ....
+};
+
+    Key Features of Inheritance:
+1. Code Reusability:- Avoid duplication by using existing functionality in new classes.
+2. Extensibility:- Extend functionality by adding or overriding base class methods.
+3. Hierarchical Structure:- Define relationships among classes for better organization.
+
+
+    TYPES OF INHERITANCE:-
+1. Single Inheritance.
+2. Multiple Inheritance.
+3. Multilevel Inheritance
+4. Hierarchical Inheritance
+5. Hybrid Inheritance
+
+1. SINGLE INHERITANCE:-
+-> In single Inheritance, a derived class is inherited from only one base class.
+
+    Syntax:-
+class derived_class_name : access-specifier  base_class_name {
+    // body.....
+};
+
+2. MULTIPLE INHERITANCE:-
+-> Multiple Inheritance, a derived class has more than one base class.
+
+    syntax:-
+class base_class_name {
+    // body.....
+};
+class base_class_2_name {
+    // body.....
+};
+class derived_class_name : access-specifier base_class_name, base_class_2_name{
+    // body.....
+};
+
+3. MULTILEVEL INHERITANCE:-
+-> In multilevel inheritance, a derived class is inherited from another derived class which is also derived from base class.
+
+Syntax:-
+class base_class_name {
+    // body.....
+};
+class derived_class_name : access-specifier  base_class_name {
+    // body.....
+};
+class derived_class_2_name : access-specifier  derived_class_name {
+    // body.....
+};
+
+4. HIERARCHICAL INHERITANCE:-
+-> In hierarchical inheritance, more than one derived class is inherited from a single base class.
+
+syntax:-
+class base_class_name {
+    // body.....
+};
+class derived_class_1_name : access-specifier  base_class_name{
+    // body.....
+};
+class derived_class_2_name : access-specifier  base_class_name{
+    // body.....
+};
+
+5. HYBRID INHEERITANCE:-
+-> Hybrid Inheritance is the combination of two or more inheritances.
+-> Mostly Multiple Inheritance and Multilevel Inheritance.
+
+ACCESS SPECIFIERS IN INHERITANCE:-
+The way members of the base class are inherited depends on the access specifier used:
+
+Access Specifier	Base Class Member Access	Derived Class Inheritance Mode
+public	            Remains public/protected	Same as in Base class
+protected	        Remains protected	        Becomes protected
+private	            Not inherited	            No access in Derived class
+
+SUMMARY:-
+-> Inheritance enhances code reuse and allows for polymorphic behavior.
+-> Proper use of virtual and override ensures clarity in class hierarchies.
+-> Avoid complex hierarchies unless necessary to maintain simplicity.
+

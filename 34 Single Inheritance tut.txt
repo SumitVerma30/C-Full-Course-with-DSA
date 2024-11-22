@@ -1,0 +1,23 @@
+SINGLE INHERITANCE:-
+In single inheritance, a derived class(Child class) inherits the properties/behaviour of a single base class (Praent class).
+
+Syntax:-
+class base_class_name {
+    // properties and methods
+    //body....
+};
+class derived_class_name : public base_class_name {
+    // body....
+};
+
+    ADVANTAGES OF SINGLE INHERITANCE:-
+-> Code Reusability:- Allows reusing the functionality of the base class.
+-> Simplified Code:- Reduces redundancy and improves maintainability.
+-> Extensibility:- Derived classes can extend the functionality of the base class.
+
+    KEY NOTES:-
+1. Constructors and Destructors:
+    -> The base class constructor is called before the derived class constructor.
+    -> The derived class destructor is called before the base class destructor
+2. Access Control: Use appropriate access specifiers to control what members of the base class are accessible in the derived class.
+
