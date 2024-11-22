@@ -1,0 +1,22 @@
+CONSTRUCTORS WITH DEFAULT ARGUMENTS:-
+In C++, Constructors can be designed with default arguments, which allows you to omit some or all arguments when creating objects. If no arguments are provided, the constructor uses the default values specified.
+
+    Syntax:-
+ClassName(parameters_with_default_values){};
+
+    KEY POINTS:-
+-> Default Values: You can specify default values for parameters directly in the constructor definition.
+-> Combination: Default arguments can be used in combination with explicitly provided values.
+-> One Constructor: With default arguments, you can often avoid the need for multiple overloaded constructors.
+
+    BENEFITS:-
+-> Simplicity: Reduces the need to overload constructors.
+-> Flexibility: Supports a range of initialization options with a single constructor.
+-> Ease of Use: Users can provide only the arguments they care about.
+
+    NOTES:-
+-> Default arguments are specified from right to left; hence, you cannot skip an earlier argument while providing a later one.
+-> Example: Rectangle(, 5); // Invalid
+-> Be careful with mixing overloaded constructors and constructors with default arguments, as it can lead to ambiguity during object initialization.
+
+

@@ -1,0 +1,17 @@
+DYNAMIC INITIALIZATION OF OBJECTS USING CONSTRUCTORS:-
+Dynamic initialization of objects in C++ refers to initializing objects at runtime using constructors. This allows objects to be initialized based on dynamic input, such as values obtained during program execution, instead of compile-time fixed values.
+
+    KEY POINTS:-
+-> Dynamic Inputs: The constructor can accept inputs provided at runtime.
+-> Flexibility: Useful in scenarios where values depend on user input or calculations.
+-> Memory Allocation: Combined with dynamic memory allocation (new and delete) for objects if needed.
+
+    ADVANTAGES:-
+-> Flexibility:- Objects can be initialized based on user input or calculated values.
+-> Efficiency:- Helps in resource allocation for objects that might depend on runtime conditions.
+-> Memory Management:- Allows fine-grained control when combined with dynamic memory allocation.
+
+    USE CASES:-
+-> Programs requiring runtime configurations (e.g., based on user preferences).
+-> Cases where object attributes depend on runtime calculations.
+-> Dynamic creation of objects for simulations or games.

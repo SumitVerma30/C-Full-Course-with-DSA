@@ -1,0 +1,25 @@
+DESTRUCTOR:-
+Destructor never takes an argument not does it return any value.
+Destructor is an instance member function that is invoked automatically whenever an object is going to be destroyed. Meaning, a destructor is the last function that is going to be called before an object is destroyed.
+
+    KEY CHARACTERSTICS OF A DESTRUCTOR:-
+1. Name:- The destructor has the same name as the class, preceded by a tilde (~).
+2. No Parameters:- Destructors do not take arguments and cannot be overloaded.
+3. No Return Type:- Destructors do not return any value.
+4. Automatic Invocation:- A destructor is called automatically when an object is destroyed, either explicitly (using delete) or implicitly (when the scope ends).
+
+Syntax:-
+
+class ClassName {
+public:
+    ~ClassName() {
+        // Cleanup code here
+    }
+};
+
+USE CASES:-
+1. Releasing Memory:- Deleting dynamically allocated memory.
+2. Closing Resources:- Closing file streams or database connections.
+3. Logging:- Debugging resource deallocation or program flow.
+
+

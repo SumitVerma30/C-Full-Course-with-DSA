@@ -1,0 +1,32 @@
+COPY CONSTRUCTOR:-
+A Copy Constructor in C++ is a special constructor used to create a new object as a copy of an existing object. It is called automatically in various scenarios, such as passing objects by value or returning objects from functions.
+
+    KEY FEATURES:-
+1. Default Copy Constructor:- C++ provides a default copy constructor if none is explicitly defined.
+2. User-Defined Copy Constructor:- You can define a custom copy constructor to handle complex copying scenarios, such as objects with dynamically allocated memory.
+
+Syntax:-
+ClassName(const ClassName& obj);
+
+The argument is a reference to an object of the same class.
+const ensures the source object is not modified.
+
+    Why Use a User-Defined Copy Constructor?
+The default copy constructor performs a shallow copy, which is problematic for classes managing dynamic memory:
+-> It copies the pointer, not the memory it points to.
+-> Changes to the copied object affect the original.
+
+By implementing a user-defined copy constructor, you ensure:
+-> Deep Copy: Proper duplication of dynamically allocated memory.
+-> Independence: Changes to one object do not affect the other.
+
+    When is the Copy Constructor Called?
+1. When an object is initialized from another object of the same type:
+ClassName obj2 = obj1;
+2. When an object is passed by value to a function.
+3. When a function returns an object by value.
+
+    Best Practices:
+1. Use const ClassName& as the argument to prevent modifications.
+2. Always define a custom copy constructor if your class involves dynamic memory allocation.
+3. Pair a user-defined copy constructor with a user-defined destructor to avoid memory leaks.
