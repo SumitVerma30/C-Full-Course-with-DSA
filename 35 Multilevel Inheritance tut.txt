@@ -1,0 +1,23 @@
+MULTILEVEL INHERITANCE:-
+Multilevel Inheritance in C++ is the process of deriving a class from another derived class. When one class inherits another class it is further inherited by another class. It is known as multi-level inheritance.
+
+    SYNTAX:
+
+class A // base class
+{
+    ...........
+};
+class B : access_specifier A // derived class
+{
+    ...........
+} ;
+class C : access_specifier B // derived from derived class B
+{
+    ...........
+} ;
+
+    KEY PPOINTS:
+Access Specifiers: Ensure appropriate access specifiers (public, protected, private) are used during inheritance to control visibility.
+Method Overriding: Derived classes can override base class methods to provide specific behavior.
+Constructor Calling: Constructors are called in the order of inheritance (from the base class to the most derived class).
+Destructors: Destructors are called in the reverse order (from the most derived class to the base class).

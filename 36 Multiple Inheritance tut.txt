@@ -1,0 +1,31 @@
+MULTIPLE INHERITANCE:-
+In C++, multiple inheritance is a feature where a class can inherit from more than one base class.
+-> However, it introduces complexities such as ambiguity and the diamond problem. (DISCUSSED IN NEXT LECTURES).
+
+SYNTAX:-
+class Base1 {
+    // Base1 members
+};
+
+class Base2 {
+    // Base2 members
+};
+
+class Derived : public Base1, public Base2 {
+    // Derived members
+};
+
+Key Concepts
+1. Ambiguity When two base classes have members with the same name, the derived class must explicitly specify which base class member to use.
+2. The Diamond Problem When a class inherits from two classes that both inherit from a common base class, ambiguity can arise. This is known as the diamond problem.
+
+ADVANTAGES:-
+1. Enables complex relationships.
+2. Allows code reuse from multiple base classes.
+
+DISADVANTAGES:-
+1. Can lead to ambiguity and complexity.
+2. Difficult to debug in large systems.
+3. The diamond problem adds further complications.
+4. Multiple inheritance should be used cautiously and only when it adds significant value to your design.
+

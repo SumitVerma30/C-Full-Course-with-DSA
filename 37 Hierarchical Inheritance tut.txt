@@ -1,0 +1,34 @@
+HIERARCHICAL INHERITANCE:-
+Hierarchical inheritance occurs when multiple classes inherit from a single base class. This allows the derived classes to share and reuse the functionality of the base class while implementing their own unique features.
+
+SYNTAX:-
+class Base {
+    // Base class members
+};
+
+class Derived1 : public Base {
+    // Derived1 members
+};
+
+class Derived2 : public Base {
+    // Derived2 members
+};
+
+    KEY CONCEPTS:-
+1. Code Reusability:- The common functionality (like eat() in the base class) is defined once and reused by all derived classes.
+2. Independent Specialization:- Each derived class can add its own specific behaviors (like bark() for Dog and meow() for Cat).
+3. Base Class Polymorphism:- The base class can serve as a common interface, enabling polymorphism if virtual functions are used.
+
+    REAL-LIFE ANALOGY
+-> Base Class: A "Vehicle" class that has a common function like move().
+-> Derived Classes: Specific types of vehicles like "Car," "Bike," or "Truck," each implementing their unique methods like honk() or loadCargo().
+
+    ADVANTAGES:-
+Promotes code reuse by sharing common behavior through the base class.
+Clear and organized structure for related classes.
+
+    DISADVANTAGES:-
+If the base class changes, it may affect all derived classes, leading to unintended consequences.
+Over-reliance on the base class might cause tight coupling.
+Hierarchical inheritance is a powerful tool when designing classes that share a common base but need specific functionality for each derived class.
+
