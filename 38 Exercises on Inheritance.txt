@@ -1,0 +1,19 @@
+Q1. Create 2 classes:
+    1. SimpleCalculator - Takes input of 2 numbers using a utility function and performs +, -, *, / and displays the result using another function.
+    2. ScientificCalculator - Takes input of 2 numbers using a utility function and performs any four scientific operations of your choice and display the results using another function.
+
+Q2. Create another class HybridCalculator and inherit it using these 2 classes:
+    1. What type of Inheritance are you using?
+    2. Which mode of Inheritance are you using?
+    3. Create an object of Inhertance and display results of simple and scientific calculator.
+    4. How is code reusability implemented?
+
+
+    Answers:-
+        1. Multilevel Inheritance.
+        2. Public Inheritance.
+        3. (IN code).
+        4. Code reusability is implemented as we do not write code for to take input in scientificCalculator class as It is Inherited from base class 'SimpleCalculator' and Hybrid class Inherited from ScientificCalculator class. So, the ScientificCalculator class access the data of SimpleCalculator class and HybridCalculator class access the data members and member functions of both classes. And at Last in main function we do not write much code to call functions of different classes, We only create a object of HybridCalculator class and use it to display results of both classes depending upon operation to perform the calculation.
+
+
+        
